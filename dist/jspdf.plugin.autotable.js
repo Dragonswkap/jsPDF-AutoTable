@@ -878,7 +878,7 @@ function printFullRow(row, drawRowHooks, drawCellHooks) {
     var remainingTexts = {};
     var table = config_1.Config.tableInstance();
     if (!canFitOnPage(row.height)) {
-        if (row.maxLineCount <= 1) {
+        if (row.maxLineCount <= 50) {
             common_1.addPage();
         }
         else {
